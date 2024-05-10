@@ -1,13 +1,11 @@
-import Banner from "@/modules/home/features/banner";
-import Branding from "@/modules/home/features/branding";
-import Header from "@/shared/widgets/header/header";
-import React from "react";
-export default function Home() {
+import Home from "@/modules/home/home";
+
+const Page = () => {
   return (
- <div>
-<Header/>
-<Banner/>
-<Branding/>
- </div>
+    <div>
+      <Home /> 
+    </div>
   );
-}
+};
+
+export default Page;
