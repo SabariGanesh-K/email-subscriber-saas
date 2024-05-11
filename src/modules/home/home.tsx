@@ -1,10 +1,10 @@
-import Banner from "@/modules/home/features/banner";
-import Branding from "@/modules/home/features/branding";
+import Banner from "@/modules/home/elements/banner";
+import Branding from "@/modules/home/elements/branding";
 import Header from "@/shared/widgets/header/header";
 import React from "react";
-import Benefits from "./features/benefits";
-import FeatureHighlight from "./features/feature.highlight";
-import Pricing from "./features/pricing";
+import Benefits from "./elements/benefits";
+import FeatureHighlight from "./elements/feature.highlight";
+import Pricing from "./elements/pricing";
 import Footer from "@/shared/widgets/footer/footer";
 
 export default function Home() {
