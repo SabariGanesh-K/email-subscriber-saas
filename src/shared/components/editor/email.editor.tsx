@@ -19,7 +19,7 @@ const Emaileditor = ({subjectTitle}:{subjectTitle:string}) => {
     const exportHtml = () =>{
         const unlayer = emailEditorRef.current?.editor;
         unlayer?.exportHtml(async(data)=>{
-            const {design,html} = data;
+            const {design,html} = data;k
             setJsonData(design);
         })
     }
