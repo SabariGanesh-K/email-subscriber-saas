@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { getEmails } from "@/actions/get-emails";
 import { useClerk } from "@clerk/nextjs";
 import Link from "next/link";
+import { deleteEmail } from "@/actions/delete.email";
 
 const Write = () => {
   const [emailTitle, setEmailTitle] = useState("");

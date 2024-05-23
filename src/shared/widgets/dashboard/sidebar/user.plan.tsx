@@ -1,4 +1,5 @@
 
+import useSubscribersData from "@/shared/hooks/useSubscribersData";
 import { ICONS } from "@/shared/utils/icons";
 import { Slider } from "@nextui-org/slider";
 import { useRouter } from "next/navigation";
@@ -8,6 +9,7 @@ const UserPlan = () => {
 
   const history = useRouter();
 const [membershipLoading, setMembershipLoading] = useState(false)
+const {data,loading}  =useSubscribersData()
   const handleManage = async () => {
    
   };
@@ -30,18 +32,19 @@ const [membershipLoading, setMembershipLoading] = useState(false)
       <Slider
         aria-label="Player progress"
         hideThumb={true}
-        defaultValue={1}
+        defaultValue={data?.length}
         className="max-w-md"
       />
-      {/* <h6 className="text-[#831743]">
+      <h6 className="text-[#831743]">
         {loading ? "..." : data?.length} of{" "}
-        {membershipData?.plan === "LAUNCH"
+        {/* {membershipData?.plan === "LAUNCH"
           ? "2500"
           : membershipData?.plan === "SCALE"
-          ? "10,000"
-          : "1,00,000"}{" "}
+          ? "10,000" */}
+          : "1,00,000"
+          {/* }{" "} */}
         added
-      </h6> */}
+      </h6>
     </div>
   );
 };

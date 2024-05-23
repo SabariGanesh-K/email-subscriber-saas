@@ -9,6 +9,14 @@ const subscribeSchema = new Schema(
     newsLetterOwnerId: {
       type: String,
     },
+    source:{
+      type:String,
+      default:"by someone"
+    },
+    status:{
+      type:String,
+      default:"Subscribed"
+    }
   },
   { timestamps: true }
 );

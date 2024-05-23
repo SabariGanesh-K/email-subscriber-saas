@@ -14,7 +14,7 @@ const Page = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    await subscribe({ email: vale, username })
+    await subscribe({ email: vale, username:username })
       .then((res) => {
         setLoading(false);
         if (res.error) {
